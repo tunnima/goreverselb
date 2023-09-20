@@ -11,6 +11,11 @@ map: https://github.com/tunnima/my-docs
 ```text
 ./goreverselb -t "0000" tunnel --apiendpoint A.A.A.A:8001 --servicename "myendpoint-8888" --serviceendpoint 127.0.0.1:4445 --frontendport 3125 --insecuretls=true
 ```
+```text
+ادامه کار:
+1- انتقال فایلهای اجرایی از مسیر /root/goreverselb/ به مسیر /etc/goreverselb/
+2- تعریف به عنوان سرویس در مسیر /lib/systemd/system/goreverse.service
+```
 Main
 =
 # Reverse tunnel Load Balancer
