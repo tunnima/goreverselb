@@ -1,3 +1,18 @@
+go version: 1.20
+
+map: https://github.com/tunnima/my-docs
+
+## Configuration:
+### Server: A.A.A.A
+```text
+./goreverselb -t "0000" server -p 8001 -s "A.A.A.A"
+```
+### Client: B.B.B.B
+```text
+./goreverselb -t "0000" tunnel --apiendpoint A.A.A.A:8001 --servicename "myendpoint-8888" --serviceendpoint 127.0.0.1:4445 --frontendport 3125 --insecuretls=true
+```
+Main
+=
 # Reverse tunnel Load Balancer
 ```
                                   _     ____  
